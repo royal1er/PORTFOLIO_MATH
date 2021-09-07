@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="animate"></div>
+</body>
+</html>
+<script>
+var start = null;
+
+var d = document.getElementById("animate");
+
+function step(timestamp) {
+  var progress;
+  if (start === null) start = timestamp;
+  progress = timestamp - start;
+  d.style.left = Math.min(progress/10, 200) + "px";
+  if (progress < 2000) {
+    requestAnimationFrame(step);
+  }
+}
+
+requestAnimationFrame(step);
+</script>

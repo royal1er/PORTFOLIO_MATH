@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathys Allebe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- COUVERTURE-->
+    <div class="cover">
+        <img class="cover-profile" src="keyboard.jpg" alt="">
+        <h1 id="author_name"></h1>
+        <p id="job_name"></p>
+        <div style="text-align: center;">
+            <a class="contact-button" href="mailto:florianallebe6@gmail.com?subject=Contact depuis allebemathys.com">ME CONTACTER</a>
+        </div>
+       
+
+        <div class="cover-contact">
+            <p><a href="mailto:florianallebe6@gmail.com?subject=Contact depuis allebemathys.com">florianallebe6@gmail.com</a></p>
+            <p><a href="tel:+5906 90 42 14 39">06 90 42 14 39</a></p>
+        </div>
+
+    </div>
+<!-- SECTION GRISE 1-->
+<div class="section section-grise1">
+    <div class="separateur"></div>
+    <div class="details">
+        <p>Je développe <b>votre Projet WEB</b> ou vos <b>Applications mobiles</b> IOS/Android de A à Z
+    </p>
+</div>
+   </div>
+<!-- SECTION Blanche-->
+<div class="section">
+    <h2>En savoir plus</h2>
+    <img src="coding.jpg" class="col-contenu" alt="">
+    <div class="col-contenu float-right">
+        <div class="texte-avec-ligne-verticale">
+             <p>Passioné par la programmation depuis le plus jeune âge je suis maintenant développeur</br></br>
+                Compétent dans les domaines du <b>web</b>  et des <b>applications mobiles</b>, je propose mes services personnalisés pour des missions de freelance</p>
+        </div>
+    </div>
+    </div>
+<!-- SECTION GRISE 2-->
+<div class="section section-grise2">
+    <h2>Portfolio</h2>
+    <table class="col-portfolio" style="display: inline-block;" >
+        <tr>
+            <td><div class="barre-verticale"></div></td>
+            <td style="width: 100%;"><a href="./portfolio-site-geoworld.html"><img src="geo_world.PNG" alt=""></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center;"><a href="./portfolio-site-geoworld.html">Découvrez les pays du monde</a></td>
+        </tr>
+    </table>
+    <table class="col-portfolio float-right" >
+        <tr>
+            <td><div class="barre-verticale"></div></td>
+            <td style="width: 100%;"><a href="portfolio-site-meteo.html"><img src="projet_meteo.png" alt=""></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center;"><a href="portfolio-site-meteo.html">Site meteo</a></td>
+        </tr>
+    </table>
+    <table class="col-portfolio" style="display: inline-block;" >
+        <tr>
+            <td><div class="barre-verticale"></div></td>
+            <td style="width: 100%;"><a href="portfolio-frontend.html"><img src="frontend.png" alt=""></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center;"><a href="portfolio-frontend.html">Défis Frontend Mentor</a></td>
+        </tr>
+    </table>
+    <table class="col-portfolio float-right" >
+        <tr>
+            <td><div class="barre-verticale"></div></td>
+            <td style="width: 100%;"><a href="portfolio-drep.html"><img src="site_web.PNG" alt=""></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align: center;"><a href="portfolio-drep.html">Application mobile de quiz<br> sur la drépanocytose</a></td>
+        </tr>
+    </table>
+</div>
+<!-- SECTION Blanche-->
+    <iframe src="./contact-frame.html" frameborder="0" scrolling="no"></iframe>
+<script>
+        let typer1 = new Typer("ALLEBE MATHYS", document.getElementById("author_name"), 0.05);
+        let typer2 = new Typer("Développeur freelance", document.getElementById("job_name"), 0.05);
+        setTimeout( function() { typer1.type(); }, 1000);
+        setTimeout( function() { typer2.type(); }, 2000);
+</script>
+</body>
+</html>
